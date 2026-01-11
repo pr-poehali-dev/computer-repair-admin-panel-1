@@ -4,6 +4,17 @@ import Login from '@/components/Login';
 import Dashboard from '@/components/sections/Dashboard';
 import Orders from '@/components/sections/Orders';
 import Clients from '@/components/sections/Clients';
+import Devices from '@/components/sections/Devices';
+import Diagnostics from '@/components/sections/Diagnostics';
+import Parts from '@/components/sections/Parts';
+import Warehouse from '@/components/sections/Warehouse';
+import Finance from '@/components/sections/Finance';
+import Employees from '@/components/sections/Employees';
+import Calendar from '@/components/sections/Calendar';
+import Statistics from '@/components/sections/Statistics';
+import Notifications from '@/components/sections/Notifications';
+import Knowledge from '@/components/sections/Knowledge';
+import Settings from '@/components/sections/Settings';
 
 export default function Index() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -23,6 +34,28 @@ export default function Index() {
         return <Orders />;
       case 'clients':
         return <Clients />;
+      case 'devices':
+        return <Devices />;
+      case 'diagnostics':
+        return <Diagnostics />;
+      case 'parts':
+        return <Parts />;
+      case 'warehouse':
+        return <Warehouse />;
+      case 'finance':
+        return <Finance />;
+      case 'employees':
+        return <Employees />;
+      case 'calendar':
+        return <Calendar />;
+      case 'statistics':
+        return <Statistics />;
+      case 'notifications':
+        return <Notifications />;
+      case 'knowledge':
+        return <Knowledge />;
+      case 'settings':
+        return <Settings />;
       default:
         return (
           <div className="flex items-center justify-center h-full">
