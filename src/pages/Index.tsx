@@ -2,14 +2,14 @@ import { useState } from 'react';
 import AdminLayout from '@/components/AdminLayout';
 import Login from '@/components/Login';
 import Dashboard from '@/components/sections/Dashboard';
-import Orders from '@/components/sections/Orders';
-import Clients from '@/components/sections/Clients';
-import Devices from '@/components/sections/Devices';
+import OrdersTable from '@/components/sections/OrdersTable';
+import ClientsTable from '@/components/sections/ClientsTable';
+import DevicesTable from '@/components/sections/DevicesTable';
 import Diagnostics from '@/components/sections/Diagnostics';
-import Parts from '@/components/sections/Parts';
+import PartsTable from '@/components/sections/PartsTable';
 import Warehouse from '@/components/sections/Warehouse';
 import Finance from '@/components/sections/Finance';
-import Employees from '@/components/sections/Employees';
+import EmployeesTable from '@/components/sections/EmployeesTable';
 import Calendar from '@/components/sections/Calendar';
 import Statistics from '@/components/sections/Statistics';
 import Notifications from '@/components/sections/Notifications';
@@ -31,21 +31,21 @@ export default function Index() {
       case 'dashboard':
         return <Dashboard />;
       case 'orders':
-        return <Orders />;
+        return <OrdersTable />;
       case 'clients':
-        return <Clients />;
+        return <ClientsTable />;
       case 'devices':
-        return <Devices />;
+        return <DevicesTable />;
       case 'diagnostics':
         return <Diagnostics />;
       case 'parts':
-        return <Parts />;
+        return <PartsTable />;
       case 'warehouse':
         return <Warehouse />;
       case 'finance':
         return <Finance />;
       case 'employees':
-        return <Employees />;
+        return <EmployeesTable />;
       case 'calendar':
         return <Calendar />;
       case 'statistics':
